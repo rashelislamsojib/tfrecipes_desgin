@@ -14,9 +14,11 @@
 }
 
 .row {
-  display: flex;
-  flex-wrap: flex;
-  margin: 0;
+ display: flex;
+flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+display: -ms-flexbox;
+margin: 0;
 }
 
 .mx {
@@ -671,87 +673,8 @@ font-weight: 500;
 
 
 
-@media (max-width: 768px) {
 
 
-  .row {
-    display: block;
-    margin: auto;
-  }
-
-  .main_section .left_site {
-    max-width: 100%;
-  }
-
-  .main_section .right_site {
-    max-width: 100%;
-  }
-
-  .left_site .content .text_left {
-    max-width: 100%;
-  }
-
-  .left_site .content .icon_right {
-    max-width: 100%;
-  }
-
-  .left_site .img_thumb .img_left {
-    max-width: 100%;
-  }
-
-
-  .left_site .img_thumb .content_right {
-    max-width: 100%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 576px) {
-
-
-  .row {
-    display: block;
-    margin: auto;
-  }
-
-  .main_section .left_site {
-    max-width: 100%;
-  }
-
-  .main_section .right_site {
-    max-width: 100%;
-  }
-
-  .left_site .content .text_left {
-    max-width: 100%;
-  }
-
-  .left_site .content .icon_right {
-    max-width: 100%;
-  }
-
-  .left_site .img_thumb .img_left {
-    max-width: 100%;
-  }
-
-
-  .left_site .img_thumb .content_right {
-    max-width: 100%;
-  }
-}
 
 /* Add media queries for responsiveness  */
 @media (max-width: 1000px) {
