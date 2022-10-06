@@ -15,72 +15,30 @@ window.onclick = function(event) {
     }
   } 
 $(document).ready (function(){
+
     //toggle menu /navbar script
-    
     $('.main_header .menu-btn').click(function(){
         $('.main_header .menu').toggleClass("active");
           $('.main_header .menu-btn i').toggleClass("active");      // body...
       });
 
-//         if(this.scrollY > 20){
-//          $('.navbar').addClass("sticky");
-//         }
-//         else{
-//           $('.navbar').removeClass("sticky");
-//         }
-               
-//         // scroll-up button show/hide script
-//         if(this.scrollY > 500){
-//             $('.scroll-up-btn').addClass("show");
-//         }else{
-//             $('.scroll-up-btn').removeClass("show");
-//         }
-//     });
-
-
-//     // slide-up script
-//     $('.scroll-up-btn').click(function(){
-//         $('html').animate({scrollTop: 0});
-//         // removing smooth scroll on slide-up button click
-//         $('html').css("scrollBehavior", "auto");
-//     });
-    
-//     //toggle menu /navbar script
-    
-//     $('.menu-btn').click(function(){
-//       $('.navbar .menu').toggleClass("active");
-//         $('.menu-btn i').toggleClass("active");      // body...
-//     });
-
-//   // typing animation stying
-//   var typed = new Typed(".typing",{
-//       strings:["YouTuber", "Developer", "Blogger", "Freelancer"],
-//       typeSpeed: 100,
-//       backSpeed: 60,
-//       loop: true 
-
-//   });
-
-//      //owl carousel script
-//      $('.carousel').owlCarousel({
-//       margin: 20,
-//       loop: true,
-//       autoplay: true,
-//       autoplayTimeOut: 2000,
-//       autoplayHoverPause: true,
-//       responsive:{
-//         0:{
-//           items: 1,
-//           nav: false
-//         },
-//         600:{
-//           items: 2,
-//           nav: false
-//         },
-//         1000:{
-//           items: 3,
-//           nav: false
-//         }
-//       }
-//      });
+// scrollUp js
+      $(function () {
+        $.scrollUp({
+            scrollName: 'scrollUp',      // Element ID
+            scrollDistance: 300,         // Distance from top/bottom before showing element (px)
+            scrollFrom: 'top',           // 'top' or 'bottom'
+            scrollSpeed: 300,            // Speed back to top (ms)
+            easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+            animation: 'fade',           // Fade, slide, none
+            animationSpeed: 200,         // Animation speed (ms)
+            scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
+            scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+            scrollText: '<i class="fa-solid fa-arrow-up"></i>', // Text for element, can contain HTML
+            scrollTitle: false,          // Set a custom <a> title if required.
+            scrollImg: false,            // Set true to use image
+            activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+            zIndex: 2147483647           // Z-Index for the overlay
+        });
+    });
 });

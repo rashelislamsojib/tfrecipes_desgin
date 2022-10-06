@@ -670,7 +670,14 @@ font-weight: 500;
 }
 
 
-
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #555;
+  color: #fff;
+  border-radius: 50%;
+}
 
 
 
